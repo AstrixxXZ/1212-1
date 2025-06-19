@@ -41,15 +41,12 @@ namespace AnimalsV2
         private void btnSellectAll_Click(object sender, EventArgs e)
         {
             List<Animal> allAnimals = AnimalController.GetAll();
-            listItems.Items.Clear();
-            foreach (var item in allAnimals)
-            {
-                listItems.Items.Add($"{item.Id}. {item.Name} - Age: {item.Age} Breed: {item.BreedTypes.Name}");
-            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'animalsContextDataSet.Animals' table. You can move, or remove it, as needed.
+            this.animalsTableAdapter.Fill(this.animalsContextDataSet.Animals);
             List<BreedType> allBreeds = breedsController.GetAllBreeds();
             cmboxBreed.DataSource = allBreeds;
             cmboxBreed.DisplayMember = "Name";
@@ -60,7 +57,10 @@ namespace AnimalsV2
 
         private void btnSelectAll_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < listItems.Items.Count; i++)
+            {
+                listItems.SetSelected(i, true);
+            }
         }
 
         private void btnFind_Click(object sender, EventArgs e)
@@ -140,21 +140,16 @@ namespace AnimalsV2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            int findId = 0;
-
-            if (string.IsNullOrEmpty(txtId.Text) || !txtId.Text.All(char.IsDigit))
+            int id;
+            if (string.IsNullOrEmpty(txtId.Text) || !Int32.TryParse(txtId.Text, out id))
             {
-                MessageBox.Show("Въведете Id за търсене!");
+                MessageBox.Show("Please enter a valid numeric ID.");
                 txtId.BackColor = Color.Red;
                 txtId.Focus();
                 return;
             }
-            else
-            {
-                findId = int.Parse(txtName.Text);
-            }
 
-            Animal findedDog = AnimalController.Get(findId);
+            Animal findedDog = AnimalController.Get(id);
             if (findedDog == null)
             {
                 MessageBox.Show("НЯМА ТАКЪВ ЗАПИС в БД! \n Въведете Id за търсене!");
@@ -166,21 +161,25 @@ namespace AnimalsV2
             LoadRecord(findedDog);
 
             DialogResult answer = MessageBox.Show(
-                "Наистина ли искате да изтриете запис No " + findId + " ?",
+                "Наистина ли искате да изтриете запис No " + id + " ?",
                 "PROMPT",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
             if (answer == DialogResult.Yes)
             {
-                AnimalController.Delete(findId);
+                AnimalController.Delete(id);
             }
 
             btnSelectAll_Click(sender, e);
-
         }
 
         private void cmboxBreed_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

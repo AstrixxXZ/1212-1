@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnimalsV2.Data
+namespace AnimalsV2.Controlers
 {
-    public class BreedType
+    public class AnimalType
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Animal> Animals { get; set; }
-        public int AnimalTypeId { get; internal set; }
     }
 }

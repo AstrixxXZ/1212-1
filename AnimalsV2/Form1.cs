@@ -20,6 +20,7 @@ namespace AnimalsV2
             InitializeComponent();
             breedsController = new BreedTypeController();
             animalController = new AnimalController();
+            txtName.KeyPress += txtName_KeyPress; // <-- това добавете
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -82,6 +83,23 @@ namespace AnimalsV2
                 txtName.Enabled = true;
                 txtAge.Enabled = true;
 
+                // Зареждане на типове животни от базата в comboBoxAnimalType
+                using (var db = new Animalsbd())
+                {
+                    var animalTypes = db.AnimalTypes.ToList();
+                    animaltypecombox.DataSource = animalTypes;
+                    animaltypecombox.DisplayMember = "Name";
+                    animaltypecombox.ValueMember = "Id";
+                    if (animalTypes.Count > 0)
+                        animaltypecombox.SelectedIndex = 0;
+                }
+
+                if (animaltypecombox.SelectedItem == null)
+                {
+                    MessageBox.Show("Първо изберете тип животно!");
+                    animaltypecombox.Focus();
+                    return;
+                }
                 LoadBreeds();
                 LoadAnimals();
             }
@@ -95,7 +113,19 @@ namespace AnimalsV2
         {
             try
             {
-                if (string.IsNullOrEmpty(txtName.Text)) 
+                // Validate txtId input
+                if (!string.IsNullOrEmpty(txtId.Text))
+                {
+                    int parsedId;
+                    if (!int.TryParse(txtId.Text, out parsedId) || txtId.Text.Any(char.IsLetter))
+                    {
+                        MessageBox.Show("ID-то трябва да бъде цяло число без букви.");
+                        txtId.Focus();
+                        return;
+                    }
+                }
+
+                if (string.IsNullOrEmpty(txtName.Text))
                 {
                     MessageBox.Show("Няма въведени данни за име. Моля въведете име!");
                     txtName.Focus();
@@ -116,43 +146,29 @@ namespace AnimalsV2
                     return;
                 }
 
+                if (animaltypecombox.SelectedItem == null)
+                {
+                    MessageBox.Show("Моля изберете тип животно!");
+                    animaltypecombox.Focus();
+                    return;
+                }
+
+                string animalType = animaltypecombox.Text;
+
                 var newAnimal = new Animal
                 {
                     Name = txtName.Text.Trim(),
                     Age = age,
-                    BreedTypeId = (int)cmboxBreed.SelectedValue
+                    BreedTypeId = (int)cmboxBreed.SelectedValue,
+                    AnimalType = animalType
                 };
 
-                // Check for duplicates before adding
-                if (AnimalController.IsDuplicate(newAnimal))
+                using (var db = new Animalsbd())
                 {
-                    var duplicate = AnimalController.GetDuplicate(newAnimal);
-                    DialogResult result = MessageBox.Show(
-                        "Вече съществува животно със същите данни!\n\n" +
-                        $"Id: {duplicate.Id}\n" +
-                        $"Име: {duplicate.Name}\n" +
-                        $"Възраст: {duplicate.Age}\n" +
-                        $"Порода: {duplicate.BreedTypes.Name}\n\n" +
-                        "Искате ли да обновите съществуващия запис?",
-                        "Намерен дубликат", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                    if (result == DialogResult.Yes)
-                    {
-                        // Load the existing record for update
-                        txtId.Text = duplicate.Id.ToString();
-                        LoadRecord(duplicate);
-                        // Switch focus to the Update button
-                        btnUpdate.Focus();
-                        return;
-                    }
-                    else
-                    {
-                        return;
-                    }
+                    db.Animals.Add(newAnimal);
+                    db.SaveChanges();
                 }
 
-                // If no duplicates, proceed with creation
-                AnimalController.Create(newAnimal);
                 ClearForm();
                 MessageBox.Show("Записът е успешно добавен!");
                 LoadAnimals();
@@ -182,7 +198,7 @@ namespace AnimalsV2
                 listItems.Items.Clear();
                 foreach (var item in allAnimals)
                 {
-                    listItems.Items.Add($"{item.Id}. {item.Name} - Age: {item.Age} Breed: {item.BreedTypes.Name}");
+                    listItems.Items.Add($"{item.Id}. {item.Name} | Години: {item.Age} | Тип на животно:  {item.AnimalType} | Порода: {item.BreedTypes.Name}");
                 }
             }
             catch (Exception ex)
@@ -349,6 +365,74 @@ namespace AnimalsV2
             if (cmboxBreed.SelectedItem != null)
             {
                 cmboxBreed.BackColor = SystemColors.Window;
+            }
+        }
+
+        private void listItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtId.Text) && txtId.Text.Any(c => !char.IsDigit(c)))
+            {
+                MessageBox.Show("ID-то трябва да съдържа само цифри.");
+                txtId.Focus();
+            }
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Името може да съдържа само букви.");
+            }
+        }
+        private void comboBoxAnimalType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (animaltypecombox.SelectedItem == null)
+            {
+                cmboxBreed.DataSource = null;
+                cmboxBreed.Enabled = false;
+                txtName.Enabled = false;
+                txtAge.Enabled = false;
+                btnAdd.Enabled = false;
+                return;
+            }
+
+            // Активирай останалите контроли
+            txtName.Enabled = true;
+            txtAge.Enabled = true;
+            btnAdd.Enabled = true;
+
+            int selectedAnimalTypeId = (int)animaltypecombox.SelectedValue;
+
+            using (var db = new Animalsbd())
+            {
+                var breeds = db.BreedTypes
+                    .Where(b => b.AnimalTypeId == selectedAnimalTypeId)
+                    .ToList();
+
+                if (breeds.Count > 0)
+                {
+                    cmboxBreed.DataSource = breeds;
+                    cmboxBreed.DisplayMember = "Name";
+                    cmboxBreed.ValueMember = "Id";
+                    cmboxBreed.Enabled = true;
+                    cmboxBreed.SelectedIndex = 0;
+                }
+                else
+                {
+                    cmboxBreed.DataSource = null;
+                    cmboxBreed.Enabled = false;
+                    MessageBox.Show("No available breeds for the selected animal type!");
+                }
             }
         }
     }

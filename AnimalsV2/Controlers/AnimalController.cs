@@ -98,5 +98,25 @@ namespace AnimalsV2.Controlers
                 }
             }
         }
+        internal static void InsertAnimal(int id, string name, int age, int breedTypeId, string animalType)
+        {
+            using (var db = new Animalsbd())
+            {
+                var animal = new Animal
+                {
+                    Id = id,
+                    Name = name,
+                    Age = age,
+                    BreedTypeId = breedTypeId
+                };
+
+                // Динамично добавяне на AnimalType, ако колоната съществува
+                db.Database.ExecuteSqlCommand(
+                    "INSERT INTO Animals (Id, Name, Age, BreedTypeId, AnimalType) VALUES (@p0, @p1, @p2, @p3, @p4)",
+                    id, name, age, breedTypeId, animalType);
+
+                db.SaveChanges();
+            }
+        }
     }
 }

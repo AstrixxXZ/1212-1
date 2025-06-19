@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
+using AnimalsV2.Controlers;
 
 namespace AnimalsV2.Data
 {
@@ -14,6 +15,7 @@ namespace AnimalsV2.Data
         {
 
         }
+        public DbSet<AnimalType> AnimalTypes { get; set; }
 
         public DbSet<BreedType> BreedTypes { get; set; }
         public DbSet<Animal> Animals { get; set; }

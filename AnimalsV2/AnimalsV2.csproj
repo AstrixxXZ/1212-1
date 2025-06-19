@@ -173,6 +173,7 @@
       <DependentUpon>AnimalsbdDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Controlers\AnimalController.cs" />
+    <Compile Include="Controlers\AnimalType.cs" />
     <Compile Include="Controlers\BreedTypeController.cs" />
     <Compile Include="Data\Animal.cs" />
     <Compile Include="Data\AnimalsContext.cs" />
@@ -187,6 +188,22 @@
     <Compile Include="Migrations\202506021943541_testmigration.Designer.cs">
       <DependentUpon>202506021943541_testmigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202506191536089_AddAnimalTypeColumn.cs" />
+    <Compile Include="Migrations\202506191536089_AddAnimalTypeColumn.Designer.cs">
+      <DependentUpon>202506191536089_AddAnimalTypeColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506191541350_AddAnimalTypeColumn1.cs" />
+    <Compile Include="Migrations\202506191541350_AddAnimalTypeColumn1.Designer.cs">
+      <DependentUpon>202506191541350_AddAnimalTypeColumn1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506191544438_CreateAnimalTypeTable.cs" />
+    <Compile Include="Migrations\202506191544438_CreateAnimalTypeTable.Designer.cs">
+      <DependentUpon>202506191544438_CreateAnimalTypeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506191619545_CreateAnimalTypeTable23.cs" />
+    <Compile Include="Migrations\202506191619545_CreateAnimalTypeTable23.Designer.cs">
+      <DependentUpon>202506191619545_CreateAnimalTypeTable23.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,6 +212,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202506021943541_testmigration.resx">
       <DependentUpon>202506021943541_testmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506191536089_AddAnimalTypeColumn.resx">
+      <DependentUpon>202506191536089_AddAnimalTypeColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506191541350_AddAnimalTypeColumn1.resx">
+      <DependentUpon>202506191541350_AddAnimalTypeColumn1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506191544438_CreateAnimalTypeTable.resx">
+      <DependentUpon>202506191544438_CreateAnimalTypeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506191619545_CreateAnimalTypeTable23.resx">
+      <DependentUpon>202506191619545_CreateAnimalTypeTable23.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

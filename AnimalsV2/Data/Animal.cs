@@ -14,5 +14,6 @@ namespace AnimalsV2.Data
         public int Age { get; set; }
         public int BreedTypeId { get; set; }
         public BreedType BreedTypes { get; set; }
+        public string AnimalType { get; set; } // <-- Добавете това свойство
     }
 }

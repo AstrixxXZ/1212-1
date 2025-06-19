@@ -49,72 +49,84 @@ namespace AnimalsV2
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.animaltypecombox = new System.Windows.Forms.ComboBox();
+            this.AnimalTypeLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(102, 104);
+            this.lblid.Location = new System.Drawing.Point(109, 128);
+            this.lblid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(24, 13);
+            this.lblid.Size = new System.Drawing.Size(128, 16);
             this.lblid.TabIndex = 0;
-            this.lblid.Text = "ИД";
+            this.lblid.Text = "Номер на животно";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(102, 143);
+            this.lblName.Location = new System.Drawing.Point(136, 176);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(29, 13);
+            this.lblName.Size = new System.Drawing.Size(34, 16);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Име";
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(102, 183);
+            this.lblAge.Location = new System.Drawing.Point(136, 225);
+            this.lblAge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(43, 13);
+            this.lblAge.Size = new System.Drawing.Size(54, 16);
             this.lblAge.TabIndex = 2;
             this.lblAge.Text = "Години";
             // 
             // lblBreed
             // 
             this.lblBreed.AutoSize = true;
-            this.lblBreed.Location = new System.Drawing.Point(102, 222);
+            this.lblBreed.Location = new System.Drawing.Point(133, 315);
+            this.lblBreed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBreed.Name = "lblBreed";
-            this.lblBreed.Size = new System.Drawing.Size(45, 13);
+            this.lblBreed.Size = new System.Drawing.Size(57, 16);
             this.lblBreed.TabIndex = 3;
             this.lblBreed.Text = "Порода";
             this.lblBreed.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(202, 104);
+            this.txtId.Location = new System.Drawing.Point(269, 128);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.Size = new System.Drawing.Size(132, 22);
             this.txtId.TabIndex = 4;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(202, 143);
+            this.txtName.Location = new System.Drawing.Point(269, 176);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.Size = new System.Drawing.Size(132, 22);
             this.txtName.TabIndex = 5;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(202, 183);
+            this.txtAge.Location = new System.Drawing.Point(269, 225);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(4);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(100, 20);
+            this.txtAge.Size = new System.Drawing.Size(132, 22);
             this.txtAge.TabIndex = 6;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(164, 290);
+            this.btnAdd.Location = new System.Drawing.Point(219, 357);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Добави";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -123,17 +135,19 @@ namespace AnimalsV2
             // cmboxBreed
             // 
             this.cmboxBreed.FormattingEnabled = true;
-            this.cmboxBreed.Location = new System.Drawing.Point(202, 222);
+            this.cmboxBreed.Location = new System.Drawing.Point(269, 312);
+            this.cmboxBreed.Margin = new System.Windows.Forms.Padding(4);
             this.cmboxBreed.Name = "cmboxBreed";
-            this.cmboxBreed.Size = new System.Drawing.Size(100, 21);
+            this.cmboxBreed.Size = new System.Drawing.Size(132, 24);
             this.cmboxBreed.TabIndex = 9;
             this.cmboxBreed.SelectedIndexChanged += new System.EventHandler(this.cmboxBreed_SelectedIndexChanged);
             // 
             // btnSelectAll
             // 
-            this.btnSelectAll.Location = new System.Drawing.Point(164, 319);
+            this.btnSelectAll.Location = new System.Drawing.Point(219, 393);
+            this.btnSelectAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelectAll.Name = "btnSelectAll";
-            this.btnSelectAll.Size = new System.Drawing.Size(93, 23);
+            this.btnSelectAll.Size = new System.Drawing.Size(124, 28);
             this.btnSelectAll.TabIndex = 10;
             this.btnSelectAll.Text = "Избери всички";
             this.btnSelectAll.UseVisualStyleBackColor = true;
@@ -141,9 +155,10 @@ namespace AnimalsV2
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(245, 290);
+            this.btnFind.Location = new System.Drawing.Point(327, 357);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(4);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(91, 23);
+            this.btnFind.Size = new System.Drawing.Size(121, 28);
             this.btnFind.TabIndex = 12;
             this.btnFind.Text = "Намери";
             this.btnFind.UseVisualStyleBackColor = true;
@@ -151,9 +166,10 @@ namespace AnimalsV2
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(263, 319);
+            this.btnUpdate.Location = new System.Drawing.Point(351, 393);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(91, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(121, 28);
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Актуализирай";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -161,9 +177,10 @@ namespace AnimalsV2
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(342, 290);
+            this.btnDelete.Location = new System.Drawing.Point(456, 357);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Изтрий";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -172,10 +189,13 @@ namespace AnimalsV2
             // listItems
             // 
             this.listItems.FormattingEnabled = true;
-            this.listItems.Location = new System.Drawing.Point(377, 12);
+            this.listItems.ItemHeight = 16;
+            this.listItems.Location = new System.Drawing.Point(503, 15);
+            this.listItems.Margin = new System.Windows.Forms.Padding(4);
             this.listItems.Name = "listItems";
-            this.listItems.Size = new System.Drawing.Size(357, 238);
+            this.listItems.Size = new System.Drawing.Size(475, 292);
             this.listItems.TabIndex = 16;
+            this.listItems.SelectedIndexChanged += new System.EventHandler(this.listItems_SelectedIndexChanged);
             // 
             // imageList1
             // 
@@ -192,19 +212,41 @@ namespace AnimalsV2
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AnimalsV2.Properties.Resources.cat_symbol_icon_256x256_jqp15brc;
-            this.pictureBox1.Location = new System.Drawing.Point(577, 256);
+            this.pictureBox1.Location = new System.Drawing.Point(769, 315);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 226);
+            this.pictureBox1.Size = new System.Drawing.Size(303, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // animaltypecombox
+            // 
+            this.animaltypecombox.FormattingEnabled = true;
+            this.animaltypecombox.Location = new System.Drawing.Point(269, 273);
+            this.animaltypecombox.Margin = new System.Windows.Forms.Padding(4);
+            this.animaltypecombox.Name = "animaltypecombox";
+            this.animaltypecombox.Size = new System.Drawing.Size(132, 24);
+            this.animaltypecombox.TabIndex = 18;
+            // 
+            // AnimalTypeLbl
+            // 
+            this.AnimalTypeLbl.AutoSize = true;
+            this.AnimalTypeLbl.Location = new System.Drawing.Point(124, 276);
+            this.AnimalTypeLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AnimalTypeLbl.Name = "AnimalTypeLbl";
+            this.AnimalTypeLbl.Size = new System.Drawing.Size(95, 16);
+            this.AnimalTypeLbl.TabIndex = 19;
+            this.AnimalTypeLbl.Text = "Тип Животно";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.AnimalTypeLbl);
+            this.Controls.Add(this.animaltypecombox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listItems);
             this.Controls.Add(this.btnDelete);
@@ -221,6 +263,7 @@ namespace AnimalsV2
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblid);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Клиника за Животни \"Сопот Animals\"";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -254,6 +297,8 @@ namespace AnimalsV2
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox animaltypecombox;
+        private System.Windows.Forms.Label AnimalTypeLbl;
     }
 }
 

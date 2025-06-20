@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -167,10 +167,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="AnimalsbdDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AnimalsbdDataSet.xsd</DependentUpon>
+=======
+    <Compile Include="AnimalsContextDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimalsContextDataSet.xsd</DependentUpon>
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
     </Compile>
     <Compile Include="Controlers\AnimalController.cs" />
     <Compile Include="Controlers\AnimalType.cs" />
@@ -235,6 +242,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
     <None Include="AnimalsbdDataSet.xsc">
       <DependentUpon>AnimalsbdDataSet.xsd</DependentUpon>
     </None>
@@ -245,6 +253,18 @@
     </None>
     <None Include="AnimalsbdDataSet.xss">
       <DependentUpon>AnimalsbdDataSet.xsd</DependentUpon>
+=======
+    <None Include="AnimalsContextDataSet.xsc">
+      <DependentUpon>AnimalsContextDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnimalsContextDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimalsContextDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnimalsContextDataSet.xss">
+      <DependentUpon>AnimalsContextDataSet.xsd</DependentUpon>
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

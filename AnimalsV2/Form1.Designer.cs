@@ -31,7 +31,10 @@ namespace AnimalsV2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+=======
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.lblid = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
@@ -46,21 +49,45 @@ namespace AnimalsV2
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.listItems = new System.Windows.Forms.ListBox();
+<<<<<<< HEAD
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.animaltypecombox = new System.Windows.Forms.ComboBox();
             this.AnimalTypeLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+=======
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.animalsContextDataSet = new AnimalsV2.AnimalsContextDataSet();
+            this.animalsContextDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.animalsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.animalsTableAdapter = new AnimalsV2.AnimalsContextDataSetTableAdapters.AnimalsTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.breedTypeIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsContextDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsContextDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsBindingSource)).BeginInit();
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.SuspendLayout();
             // 
             // lblid
             // 
             this.lblid.AutoSize = true;
+<<<<<<< HEAD
             this.lblid.Location = new System.Drawing.Point(109, 128);
             this.lblid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(128, 16);
+=======
+            this.lblid.Location = new System.Drawing.Point(136, 128);
+            this.lblid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(18, 16);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.lblid.TabIndex = 0;
             this.lblid.Text = "Номер на животно";
             // 
@@ -70,7 +97,11 @@ namespace AnimalsV2
             this.lblName.Location = new System.Drawing.Point(136, 176);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
+<<<<<<< HEAD
             this.lblName.Size = new System.Drawing.Size(34, 16);
+=======
+            this.lblName.Size = new System.Drawing.Size(44, 16);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Име";
             // 
@@ -80,17 +111,28 @@ namespace AnimalsV2
             this.lblAge.Location = new System.Drawing.Point(136, 225);
             this.lblAge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAge.Name = "lblAge";
+<<<<<<< HEAD
             this.lblAge.Size = new System.Drawing.Size(54, 16);
+=======
+            this.lblAge.Size = new System.Drawing.Size(32, 16);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.lblAge.TabIndex = 2;
             this.lblAge.Text = "Години";
             // 
             // lblBreed
             // 
             this.lblBreed.AutoSize = true;
+<<<<<<< HEAD
             this.lblBreed.Location = new System.Drawing.Point(133, 315);
             this.lblBreed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBreed.Name = "lblBreed";
             this.lblBreed.Size = new System.Drawing.Size(57, 16);
+=======
+            this.lblBreed.Location = new System.Drawing.Point(136, 273);
+            this.lblBreed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBreed.Name = "lblBreed";
+            this.lblBreed.Size = new System.Drawing.Size(44, 16);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.lblBreed.TabIndex = 3;
             this.lblBreed.Text = "Порода";
             this.lblBreed.Click += new System.EventHandler(this.label1_Click);
@@ -135,7 +177,11 @@ namespace AnimalsV2
             // cmboxBreed
             // 
             this.cmboxBreed.FormattingEnabled = true;
+<<<<<<< HEAD
             this.cmboxBreed.Location = new System.Drawing.Point(269, 312);
+=======
+            this.cmboxBreed.Location = new System.Drawing.Point(269, 273);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.cmboxBreed.Margin = new System.Windows.Forms.Padding(4);
             this.cmboxBreed.Name = "cmboxBreed";
             this.cmboxBreed.Size = new System.Drawing.Size(132, 24);
@@ -144,6 +190,7 @@ namespace AnimalsV2
             // 
             // btnSelectAll
             // 
+<<<<<<< HEAD
             this.btnSelectAll.Location = new System.Drawing.Point(219, 393);
             this.btnSelectAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelectAll.Name = "btnSelectAll";
@@ -152,6 +199,16 @@ namespace AnimalsV2
             this.btnSelectAll.Text = "Избери всички";
             this.btnSelectAll.UseVisualStyleBackColor = true;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
+=======
+            this.btnSellectAll.Location = new System.Drawing.Point(219, 393);
+            this.btnSellectAll.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSellectAll.Name = "btnSellectAll";
+            this.btnSellectAll.Size = new System.Drawing.Size(124, 28);
+            this.btnSellectAll.TabIndex = 10;
+            this.btnSellectAll.Text = "SELECT ALL";
+            this.btnSellectAll.UseVisualStyleBackColor = true;
+            this.btnSellectAll.Click += new System.EventHandler(this.btnSellectAll_Click);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             // 
             // btnFind
             // 
@@ -175,9 +232,25 @@ namespace AnimalsV2
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+<<<<<<< HEAD
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(456, 357);
+=======
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(456, 357);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "ADD";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(564, 357);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 28);
@@ -239,15 +312,98 @@ namespace AnimalsV2
             this.AnimalTypeLbl.TabIndex = 19;
             this.AnimalTypeLbl.Text = "Тип Животно";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn,
+            this.ageDataGridViewTextBoxColumn,
+            this.breedTypeIdDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.animalsBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(503, 15);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(475, 292);
+            this.dataGridView1.TabIndex = 17;
+            // 
+            // animalsContextDataSet
+            // 
+            this.animalsContextDataSet.DataSetName = "AnimalsContextDataSet";
+            this.animalsContextDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // animalsContextDataSetBindingSource
+            // 
+            this.animalsContextDataSetBindingSource.DataSource = this.animalsContextDataSet;
+            this.animalsContextDataSetBindingSource.Position = 0;
+            // 
+            // animalsBindingSource
+            // 
+            this.animalsBindingSource.DataMember = "Animals";
+            this.animalsBindingSource.DataSource = this.animalsContextDataSetBindingSource;
+            // 
+            // animalsTableAdapter
+            // 
+            this.animalsTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.ageDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // breedTypeIdDataGridViewTextBoxColumn
+            // 
+            this.breedTypeIdDataGridViewTextBoxColumn.DataPropertyName = "BreedTypeId";
+            this.breedTypeIdDataGridViewTextBoxColumn.HeaderText = "BreedTypeId";
+            this.breedTypeIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.breedTypeIdDataGridViewTextBoxColumn.Name = "breedTypeIdDataGridViewTextBoxColumn";
+            this.breedTypeIdDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.AnimalTypeLbl);
             this.Controls.Add(this.animaltypecombox);
             this.Controls.Add(this.pictureBox1);
+=======
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dataGridView1);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.Controls.Add(this.listItems);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -262,12 +418,22 @@ namespace AnimalsV2
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblid);
+<<<<<<< HEAD
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+=======
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Клиника за Животни \"Сопот Animals\"";
             this.Load += new System.EventHandler(this.Form1_Load);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsContextDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsContextDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsBindingSource)).EndInit();
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,11 +460,24 @@ namespace AnimalsV2
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ListBox listItems;
+<<<<<<< HEAD
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox animaltypecombox;
         private System.Windows.Forms.Label AnimalTypeLbl;
+=======
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource animalsContextDataSetBindingSource;
+        private AnimalsContextDataSet animalsContextDataSet;
+        private System.Windows.Forms.BindingSource animalsBindingSource;
+        private AnimalsContextDataSetTableAdapters.AnimalsTableAdapter animalsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn breedTypeIdDataGridViewTextBoxColumn;
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
     }
 }
 

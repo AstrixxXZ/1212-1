@@ -12,7 +12,11 @@ namespace AnimalsV2.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.14.0.0")]
+=======
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.10.0.0")]
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,11 +30,19 @@ namespace AnimalsV2.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+<<<<<<< HEAD
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Animalsbd;Integrated Security=" +
             "True")]
         public string AnimalsbdConnectionString {
             get {
                 return ((string)(this["AnimalsbdConnectionString"]));
+=======
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AnimalsContext;Integrated Secu" +
+            "rity=True")]
+        public string AnimalsContextConnectionString {
+            get {
+                return ((string)(this["AnimalsContextConnectionString"]));
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             }
         }
     }

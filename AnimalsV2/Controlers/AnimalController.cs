@@ -2,17 +2,48 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AnimalsV2.Controlers
 {
     internal class AnimalController
     {
+<<<<<<< HEAD
         private static readonly Animalsbd db = new Animalsbd();
-
-        internal static Animal Get(int findId)
+=======
+        internal static void Add(Animal newAnimal)
         {
+            using (var context = new AnimalsContext())
+            {
+                context.Animals.Add(newAnimal);
+                context.SaveChanges();
+            }
+        }
+
+        internal static Animal Find(int findId)
+        {
+            using (var context = new AnimalsContext())
+            {
+                return context.Animals.Find(findId);
+            }
+        }
+
+        internal static void Delete(int findId)
+        {
+            using (var context = new AnimalsContext())
+            {
+                var animal = context.Animals.Find(findId);
+                if (animal != null)
+                {
+                    context.Animals.Remove(animal);
+                    context.SaveChanges();
+                }
+            }
+        }
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
+
+        internal static List<Animal> SelectAll()
+        {
+<<<<<<< HEAD
             using (var context = new Animalsbd())
             {
                 return context.Animals
@@ -67,11 +98,17 @@ namespace AnimalsV2.Controlers
                 return context.Animals
                     .Include("BreedTypes") // Using string-based Include for EF6
                     .ToList();
+=======
+            using (var context = new AnimalsContext())
+            {
+                return context.Animals.ToList();
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             }
         }
 
         internal static void Update(int findId, Animal updatedAnimal)
         {
+<<<<<<< HEAD
             using (var context = new Animalsbd())
             {
                 var existingAnimal = context.Animals.Find(findId);
@@ -81,14 +118,40 @@ namespace AnimalsV2.Controlers
                     existingAnimal.Age = updatedAnimal.Age;
                     existingAnimal.BreedTypeId = updatedAnimal.BreedTypeId;
                     existingAnimal.Description = updatedAnimal.Description;
+=======
+            using (var context = new AnimalsContext())
+            {
+                var animal = context.Animals.Find(findId);
+                if (animal != null)
+                {
+                    animal.Name = updatedAnimal.Name;
+                    animal.BreedTypes = updatedAnimal.BreedTypes;
+                    animal.Age = updatedAnimal.Age;
+
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
                     context.SaveChanges();
                 }
             }
         }
 
+<<<<<<< HEAD
         internal static void Delete(int findId)
         {
             using (var context = new Animalsbd())
+=======
+        internal static void Create(Animal newAnimal)
+        {
+            using (var context = new AnimalsContext())
+            {
+                context.Animals.Add(newAnimal);
+                context.SaveChanges();
+            }
+        }
+
+        internal static void DeleteAnimal(int findId)
+        {
+            using (var context = new AnimalsContext())
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             {
                 var animal = context.Animals.Find(findId);
                 if (animal != null)
@@ -98,6 +161,7 @@ namespace AnimalsV2.Controlers
                 }
             }
         }
+<<<<<<< HEAD
         internal static void InsertAnimal(int id, string name, int age, int breedTypeId, string animalType)
         {
             using (var db = new Animalsbd())
@@ -116,6 +180,38 @@ namespace AnimalsV2.Controlers
                     id, name, age, breedTypeId, animalType);
 
                 db.SaveChanges();
+=======
+
+        internal static Animal Get(int findId)
+        {
+            using (var context = new AnimalsContext())
+            {
+                return context.Animals.Find(findId);
+            }
+        }
+
+        internal static List<Animal> GetAll()
+        {
+            using (var context = new AnimalsContext())
+            {
+                return context.Animals.ToList();
+            }
+        }
+
+        internal static void UpdateAnimal(int findId, Animal updatedAnimal)
+        {
+            using (var context = new AnimalsContext())
+            {
+                var animal = context.Animals.Find(findId);
+                if (animal != null)
+                {
+                    animal.Name = updatedAnimal.Name;
+                    animal.BreedTypes = updatedAnimal.BreedTypes;
+                    animal.Age = updatedAnimal.Age;
+
+                    context.SaveChanges();
+                }
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             }
         }
     }

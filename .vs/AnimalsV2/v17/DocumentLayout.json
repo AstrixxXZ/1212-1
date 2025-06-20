@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Astrix2\\Desktop\\AnimalsProjectV2\\",
   "Documents": [
     {
@@ -46,6 +47,36 @@
     {
       "AbsoluteMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|C:\\Users\\Astrix2\\Desktop\\AnimalsProjectV2\\animalsv2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|solutionrelative:animalsv2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\animalsv2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|solutionrelative:animalsv2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|c:\\users\\stem-1-7\\desktop\\11a ivan\\1212-1\\animalsv2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|solutionrelative:animalsv2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\animalsv2\\controlers\\breedtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|solutionrelative:animalsv2\\controlers\\breedtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|c:\\users\\stem-1-7\\desktop\\11a ivan\\1212-1\\animalsv2\\controlers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|solutionrelative:animalsv2\\controlers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\animalsv2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|solutionrelative:animalsv2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AnimalsContext/True/SqlTable/dbo.BreedTypes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\animalsv2\\data\\animalscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59363810-3B3A-4E0C-B0B6-72D5A8573A2D}|AnimalsV2\\AnimalsV2.csproj|solutionrelative:animalsv2\\data\\animalscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
     }
   ],
   "DocumentGroupContainers": [
@@ -55,6 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -112,20 +144,48 @@
               "EditorCaption": ""
             },
             {
+=======
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\Astrix2\\Desktop\\AnimalsProjectV2\\AnimalsV2\\Form1.cs",
               "RelativeDocumentMoniker": "AnimalsV2\\Form1.cs",
               "ToolTip": "C:\\Users\\Astrix2\\Desktop\\AnimalsProjectV2\\AnimalsV2\\Form1.cs",
               "RelativeToolTip": "AnimalsV2\\Form1.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAQwFoAAAA8AAAAAAAAAA==",
+=======
+              "DocumentMoniker": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Form1.cs",
+              "RelativeDocumentMoniker": "AnimalsV2\\Form1.cs",
+              "ToolTip": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Form1.cs",
+              "RelativeToolTip": "AnimalsV2\\Form1.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwD0AAAAWAAAA",
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T05:29:03.086Z",
+              "WhenOpened": "2025-06-19T05:35:43.681Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AnimalController.cs",
+              "DocumentMoniker": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Controlers\\AnimalController.cs",
+              "RelativeDocumentMoniker": "AnimalsV2\\Controlers\\AnimalController.cs",
+              "ToolTip": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Controlers\\AnimalController.cs",
+              "RelativeToolTip": "AnimalsV2\\Controlers\\AnimalController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAmwFAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T05:24:12.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Astrix2\\Desktop\\AnimalsProjectV2\\AnimalsV2\\Form1.cs",
@@ -144,10 +204,35 @@
               "ToolTip": "dbo.Animals [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2025-06-19T15:43:53.577Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "BreedTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Controlers\\BreedTypeController.cs",
+              "RelativeDocumentMoniker": "AnimalsV2\\Controlers\\BreedTypeController.cs",
+              "ToolTip": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Controlers\\BreedTypeController.cs",
+              "RelativeToolTip": "AnimalsV2\\Controlers\\BreedTypeController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:34:12.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\App.config",
+              "RelativeDocumentMoniker": "AnimalsV2\\App.config",
+              "ToolTip": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\App.config",
+              "RelativeToolTip": "AnimalsV2\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-02T19:36:54.476Z",
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
               "Title": "AnimalType.cs",
               "DocumentMoniker": "C:\\Users\\Astrix2\\Desktop\\AnimalsProjectV2\\AnimalsV2\\Controlers\\AnimalType.cs",
@@ -180,10 +265,31 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T15:41:40.022Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Form1.cs",
+              "RelativeDocumentMoniker": "AnimalsV2\\Form1.cs",
+              "ToolTip": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Form1.cs [Design]",
+              "RelativeToolTip": "AnimalsV2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T19:34:39.048Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.BreedTypes [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AnimalsContext/True/SqlTable/dbo.BreedTypes.sql",
+              "ToolTip": "dbo.BreedTypes [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-06-19T05:21:58.96Z",
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 9,
               "Title": "AnimalsContext.cs",
               "DocumentMoniker": "C:\\Users\\Astrix2\\Desktop\\AnimalsProjectV2\\AnimalsV2\\Data\\AnimalsContext.cs",
@@ -207,6 +313,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-06-02T19:36:54.476Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 6,
+              "Title": "AnimalsContext.cs",
+              "DocumentMoniker": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Data\\AnimalsContext.cs",
+              "RelativeDocumentMoniker": "AnimalsV2\\Data\\AnimalsContext.cs",
+              "ToolTip": "C:\\Users\\STEM-1-7\\Desktop\\11a Ivan\\1212-1\\AnimalsV2\\Data\\AnimalsContext.cs",
+              "RelativeToolTip": "AnimalsV2\\Data\\AnimalsContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T19:38:01.029Z",
+              "EditorCaption": ""
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             }
           ]
         }

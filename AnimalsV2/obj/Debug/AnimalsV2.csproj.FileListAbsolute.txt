@@ -30,6 +30,7 @@ C:\Users\1212-1\Desktop\Ivan 11A\AnimalsProject\AnimalsV2\obj\Debug\AnimalsV2.ex
 C:\Users\1212-1\Desktop\Ivan 11A\AnimalsProject\AnimalsV2\obj\Debug\AnimalsV2.pdb
 C:\Users\1212-1\Desktop\Ivan 11A\AnimalsProject\AnimalsV2\obj\Debug\AnimalsV2.Form1.resources
 C:\Users\1212-1\Desktop\Ivan 11A\AnimalsProject\AnimalsV2\obj\Debug\AnimalsV2.exe.config
+<<<<<<< HEAD
 C:\Users\1212-1\Desktop\Ivan 11A\AnimalsProjectV2\AnimalsV2\bin\Debug\AnimalsV2.exe.config
 C:\Users\1212-1\Desktop\Ivan 11A\AnimalsProjectV2\AnimalsV2\bin\Debug\AnimalsV2.exe
 C:\Users\1212-1\Desktop\Ivan 11A\AnimalsProjectV2\AnimalsV2\bin\Debug\AnimalsV2.pdb
@@ -254,3 +255,21 @@ C:\Users\Astrix2\Desktop\AnimalsProjectV2\AnimalsV2\obj\Debug\AnimalsV2.Migratio
 C:\Users\Astrix2\Desktop\AnimalsProjectV2\AnimalsV2\obj\Debug\AnimalsV2.Migrations.AddAnimalTypeColumn1.resources
 C:\Users\Astrix2\Desktop\AnimalsProjectV2\AnimalsV2\obj\Debug\AnimalsV2.Migrations.CreateAnimalTypeTable.resources
 C:\Users\Astrix2\Desktop\AnimalsProjectV2\AnimalsV2\obj\Debug\AnimalsV2.Migrations.CreateAnimalTypeTable23.resources
+=======
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\bin\Debug\AnimalsV2.exe.config
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\bin\Debug\AnimalsV2.exe
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\bin\Debug\AnimalsV2.pdb
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\bin\Debug\EntityFramework.dll
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\bin\Debug\EntityFramework.xml
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.csproj.AssemblyReference.cache
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.Form1.resources
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.Migrations.testmigration.resources
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.Properties.Resources.resources
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.csproj.GenerateResource.cache
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.csproj.CoreCompileInputs.cache
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.csproj.Up2Date
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.exe
+C:\Users\STEM-1-7\Desktop\11a Ivan\1212-1\AnimalsV2\obj\Debug\AnimalsV2.pdb
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29

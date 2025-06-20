@@ -38,6 +38,7 @@ namespace AnimalsV2
 
         private void LoadBreeds()
         {
+<<<<<<< HEAD
             try
             {
                 var currentSelection = cmboxBreed.SelectedValue;
@@ -73,15 +74,27 @@ namespace AnimalsV2
             {
                 MessageBox.Show($"Грешка при зареждане на породите: {ex.Message}");
             }
+=======
+            List<Animal> allAnimals = AnimalController.GetAll();
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                 cmboxBreed.Enabled = true;
                 txtName.Enabled = true;
                 txtAge.Enabled = true;
+=======
+            // TODO: This line of code loads data into the 'animalsContextDataSet.Animals' table. You can move, or remove it, as needed.
+            this.animalsTableAdapter.Fill(this.animalsContextDataSet.Animals);
+            List<BreedType> allBreeds = breedsController.GetAllBreeds();
+            cmboxBreed.DataSource = allBreeds;
+            cmboxBreed.DisplayMember = "Name";
+            cmboxBreed.ValueMember = "Id";
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
 
                 // Зареждане на типове животни от базата в comboBoxAnimalType
                 using (var db = new Animalsbd())
@@ -209,6 +222,7 @@ namespace AnimalsV2
 
         private void btnSelectAll_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                 List<Animal> allAnimals = AnimalController.GetAll();
@@ -221,6 +235,11 @@ namespace AnimalsV2
             catch (Exception ex)
             {
                 MessageBox.Show($"Грешка при зареждане на списъка: {ex.Message}");
+=======
+            for (int i = 0; i < listItems.Items.Count; i++)
+            {
+                listItems.SetSelected(i, true);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             }
         }
 
@@ -319,6 +338,7 @@ namespace AnimalsV2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                 if (string.IsNullOrEmpty(txtId.Text) || !int.TryParse(txtId.Text, out int findId))
@@ -358,6 +378,40 @@ namespace AnimalsV2
             {
                 MessageBox.Show($"Грешка при изтриване на записа: {ex.Message}");
             }
+=======
+            int id;
+            if (string.IsNullOrEmpty(txtId.Text) || !Int32.TryParse(txtId.Text, out id))
+            {
+                MessageBox.Show("Please enter a valid numeric ID.");
+                txtId.BackColor = Color.Red;
+                txtId.Focus();
+                return;
+            }
+
+            Animal findedDog = AnimalController.Get(id);
+            if (findedDog == null)
+            {
+                MessageBox.Show("НЯМА ТАКЪВ ЗАПИС в БД! \n Въведете Id за търсене!");
+                txtId.BackColor = Color.Red;
+                txtId.Focus();
+                return;
+            }
+
+            LoadRecord(findedDog);
+
+            DialogResult answer = MessageBox.Show(
+                "Наистина ли искате да изтриете запис No " + id + " ?",
+                "PROMPT",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (answer == DialogResult.Yes)
+            {
+                AnimalController.Delete(id);
+            }
+
+            btnSelectAll_Click(sender, e);
+>>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
         }
 
         private void cmboxBreed_SelectedIndexChanged(object sender, EventArgs e)
@@ -434,6 +488,11 @@ namespace AnimalsV2
                     MessageBox.Show("No available breeds for the selected animal type!");
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

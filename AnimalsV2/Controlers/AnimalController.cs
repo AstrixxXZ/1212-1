@@ -214,5 +214,10 @@ namespace AnimalsV2.Controlers
 >>>>>>> 56015b79bbdf45d2cab9f456e0b690738385ef29
             }
         }
+
+        internal static Animal Get(int findId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
